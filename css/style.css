@@ -1,0 +1,58 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.top_bar {
+  text-align: center;
+  padding-block: 5%;
+  padding-inline: 25%;
+  border-bottom: 1px solid black;
+}
+
+.top_bar h1 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1b75bb;
+}
+
+.courseWrapper {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.courseWrapper div {
+  width: 25%;
+  text-align: center;
+  padding-block: 0;
+  display: block;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding-inline: 5%;
+}
+
+.courseWrapper div h2 {
+  font-weight: bold;
+  color: rgb(27, 117, 187);
+}
+
+.courseWrapper div p {
+  font-size: small;
+  padding-block: 3%;
+  color: #8b8a8a;
+}
+
+.courseWrapper div button {
+  color: rgb(27, 117, 187);
+  border: 1px solid rgb(27, 117, 187);
+  background-color: rgba(27, 117, 187, 0.05);
+  padding: 4% 8%;
+  border-radius: 25px;
+}

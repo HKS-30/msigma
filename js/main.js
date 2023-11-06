@@ -35,7 +35,15 @@ async function getData() {
       description.id = "description";
       let button = document.createElement("button");
       button.innerHTML = "Apply now";
-      button.style.border = `1px solid ${randomColor}`; // Apply the same random color to the button border
+      button.setAttribute(
+        "style",
+        `color: ${randomColor}; 
+        border: 1px solid ${randomColor}; 
+        background-color: rgba(${randomColor
+          .replace("rgb(", "")
+          .replace(")", "")}, 0.1);`
+      );
+
       let pricing = document.createElement("p");
       pricing.innerHTML = "Fee starting at ₹799 per subject";
       pricing.id = "pricing";
